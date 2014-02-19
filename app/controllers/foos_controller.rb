@@ -14,7 +14,7 @@ class FoosController < ApplicationController
 
   # GET /foos/new
   def new
-    @foo = Foo.new(id: SecureRandom.uuid)
+    @foo = Foo.new(bar: SecureRandom.uuid)
   end
 
   # GET /foos/1/edit
@@ -64,7 +64,7 @@ class FoosController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_foo
-      @foo = Foo.find_or_create_by(id: params[:id])
+      @foo = Foo.find_or_create_by(bar: params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
