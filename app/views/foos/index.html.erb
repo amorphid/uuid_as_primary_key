@@ -3,7 +3,7 @@
 <table>
   <thead>
     <tr>
-      <th>Uuid</th>
+      <th>Bar</th>
       <th></th>
       <th></th>
       <th></th>
@@ -13,7 +13,7 @@
   <tbody>
     <% @foos.each do |foo| %>
       <tr>
-        <td><%= foo.uuid %></td>
+        <td><%= foo.bar %></td>
         <td><%= link_to 'Show', foo %></td>
         <td><%= link_to 'Edit', edit_foo_path(foo) %></td>
         <td><%= link_to 'Destroy', foo, method: :delete, data: { confirm: 'Are you sure?' } %></td>

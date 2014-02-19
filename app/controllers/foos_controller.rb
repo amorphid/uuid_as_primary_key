@@ -69,6 +69,6 @@ class FoosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def foo_params
-      params.require(:foo).permit(:uuid)
+      params.require(:foo).permit(:bar)
     end
 end

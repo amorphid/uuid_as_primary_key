@@ -18,7 +18,7 @@ class FoosControllerTest < ActionController::TestCase
 
   test "should create foo" do
     assert_difference('Foo.count') do
-      post :create, foo: { uuid: @foo.uuid }
+      post :create, foo: { bar: @foo.bar }
     end
 
     assert_redirected_to foo_path(assigns(:foo))
@@ -35,7 +35,7 @@ class FoosControllerTest < ActionController::TestCase
   end
 
   test "should update foo" do
-    patch :update, id: @foo, foo: { uuid: @foo.uuid }
+    patch :update, id: @foo, foo: { bar: @foo.bar }
     assert_redirected_to foo_path(assigns(:foo))
   end
 
